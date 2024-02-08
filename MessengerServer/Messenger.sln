@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessengerServer", "MessengerServer.csproj", "{901F1F2C-2244-443E-97EC-AFF9411341BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessengerClient", "..\MessengerClient\MessengerClient.csproj", "{B2AAB8EF-7153-4817-BF58-E8563CBF753E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerLibrary", "..\MessengerLibrary\MessengerLibrary.csproj", "{AA08982F-C82F-41B2-87FE-24D0F813BDBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{901F1F2C-2244-443E-97EC-AFF9411341BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901F1F2C-2244-443E-97EC-AFF9411341BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901F1F2C-2244-443E-97EC-AFF9411341BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901F1F2C-2244-443E-97EC-AFF9411341BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AAB8EF-7153-4817-BF58-E8563CBF753E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AAB8EF-7153-4817-BF58-E8563CBF753E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AAB8EF-7153-4817-BF58-E8563CBF753E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AAB8EF-7153-4817-BF58-E8563CBF753E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA08982F-C82F-41B2-87FE-24D0F813BDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA08982F-C82F-41B2-87FE-24D0F813BDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA08982F-C82F-41B2-87FE-24D0F813BDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA08982F-C82F-41B2-87FE-24D0F813BDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EF7F692-E4CC-481D-9015-A41F6988B33E}
+	EndGlobalSection
+EndGlobal
