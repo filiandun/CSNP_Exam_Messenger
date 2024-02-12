@@ -72,15 +72,21 @@ namespace MessengerClient
                     // дисеарилизуем
                     Request request = JsonSerializer.Deserialize<Request>(requestJson);
 
-                    Application.Current.Dispatcher.Invoke(() =>
+                    switch (request.messageType)
                     {
-                        this.messageListBox.Items.Add(new MessageListBoxItem(request.userName, request.userMessage, request.messageType, request.userColor));
-                        this.messageListBox.Items.Refresh();
-                    });
+                        case MessageType.Message:
+                            Application.Current.Dispatcher.Invoke(() =>
+                            {
+                                this.messageListBox.Items.Add(new MessageListBoxItem(request.userName, request.userMessage, request.messageType, request.userColor));
+                                this.messageListBox.Items.Refresh();
+                            });
+                            
+                            break;
+                    }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message + ex.InnerException);
+                    MessageBox.Show(ex.Message);
                 }
             }
         }

@@ -4,20 +4,38 @@ namespace MessengerLibrary
 {
     public enum MessageType
     {
-        Outgoing,
-        Incoming,
-        Server
+        SignIn,
+        SignUp,
+        Message
     }
 
     public class Request
     {
-        public string userName { get; set; }
-        public string userMessage { get; set; }
-
-        public string userColor { get; set; }
-
-        public string timestamp { get; set; }
+        public object data { get; set; }
 
         public MessageType messageType { get; set; }
     }
+
+    public class SignIn
+    {
+        public string userLogin { get; set; }
+        public string userPassword { get; set; }
+    }
+
+    public class SignUp
+    {
+        public string userLogin { get; set; }
+        public string userPassword { get; set; }
+
+        public string userName { get; set; }
+        public string userColor { get; set; }
+    }
+
+    public class Message
+    {
+        public string userLogin { get; set; }
+
+        public string userMessage { get; set; }
+    }
+
 }
